@@ -476,30 +476,30 @@
           <form class="modal-form" autocomplete="off">
             <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
             <button class="clsbtn" type="button" data-modal-close>
-              <svg class="close" width="11px" height="11px">
-                <use href="./images/mdlspite.svg#icon-closebtn"></use>
-              </svg>
+              <img src="./images/closebtn.svg" class="close" />
             </button>
-            <label class="form-group"
-              >
-            <span class="labelform">Имя</span>
+            <label class="form-group">
+              <span class="labelform">Имя</span>
               <input type="text" name="name" placeholder="" class="form-input"
             /></label>
-            <label class="form-group"
-              >
-            <span class="labelform">Телефон</span>
+            <label class="form-group">
+              <span class="labelform">Телефон</span>
               <input type="tel" name="tel" placeholder="" class="form-input"
             /></label>
-            <label class="form-group"
-              >
-            <span class="labelform">Почта</span>
+            <label class="form-group">
+              <span class="labelform">Почта</span>
               <input type="email" name="mail" placeholder="" class="form-input"
             /></label>
-            <label class="comment"
-              
-            <span class="labelcomment">Комментарий</span>
-              <textarea type="text"></textarea>
-            </label>
+            <label class="comment" for="txtarea">
+              <span class="labelcomment">Комментарий</span></label
+            >
+            <textarea
+              type="text"
+              id="txtarea"
+              class="textarea-com"
+              placeholder="Введите текст"
+            ></textarea>
+
             <label class="label-checkbox">
               <input type="checkbox" name="mdlbox" class="modalcheckbox" />
             </label>
