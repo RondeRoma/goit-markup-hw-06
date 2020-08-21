@@ -56,7 +56,9 @@ button {
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-
+.btn-align {
+  text-align: center;
+}
 .btn-portf {
   display: inline-flex;
   padding: 6px 22px;
@@ -719,6 +721,7 @@ footer {
 .clsbtn:hover .close,
 .clsbtn:focus .close {
   fill: var(--accent-color);
+  cursor: pointer;
 }
 
 .clsbtn {
@@ -737,6 +740,8 @@ footer {
   padding-bottom: 30px;
   font-size: 20px;
   margin: 0;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .modal-form {
   width: 448px;
@@ -759,16 +764,20 @@ footer {
 }
 .form-input {
   padding: 12px 12px 12px 42px;
+  margin-top: 4px;
   outline-color: var(--secondary-text-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .labelform {
-  position: absolute;
-  bottom: 44px;
-  transition: ;
+  color: var(--secondary-text-color);
+  font-size: 12px;
+  letter-spacing: 0.01em;
 }
+
 .comment {
   position: relative;
   display: flex;
@@ -776,6 +785,9 @@ footer {
 }
 .labelcomment {
   position: absolute;
+  color: var(--secondary-text-color);
+  letter-spacing: 0.01em;
+  padding-bottom: 4px;
 }
 
 .textarea-com {
@@ -786,11 +798,45 @@ footer {
   cursor: pointer;
   min-height: 120px;
   min-width: 448px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.textarea-com::placeholder {
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  resize: none;
+}
+
+.icon-mdl {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  fill: var(--primary-text-color);
+}
+
+.form-input:focus,
+.textarea-com:focus {
+  outline-color: var(--accent-color);
+}
+.form-input:focus + .icon-mdl {
+  fill: var(--accent-color);
+}
+
+.modal-form .sendbutton {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.label-chekbox {
+  display: inline-flex;
+}
+.mdl-a {
+  color: var(--accent-color);
 }

@@ -476,20 +476,46 @@
           <form class="modal-form" autocomplete="off">
             <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
             <button class="clsbtn" type="button" data-modal-close>
-              <img src="./images/closebtn.svg" class="close" />
+              <svg class="close"><use href="./images/mdlsprite.svg#icon-closebtn"></use></svg>
+              <!--<img src="./images/closebtn.svg" class="close" />-->
             </button>
+            <span class="labelform">Имя</span>
             <label class="form-group">
-              <span class="labelform">Имя</span>
-              <input type="text" name="name" placeholder="" class="form-input"
-            /></label>
+              <input
+                type="text"
+                name="name"
+                placeholder=""
+                class="form-input"
+                pattern="[A-Za-zА-Яа-яЁё]+$"
+              />
+              <svg class="icon-mdl" width="12" height="12">
+                <use href="./images/mdlsprite.svg#icon-mdlname"></use>
+              </svg>
+            </label>
+            <span class="labelform">Телефон</span>
             <label class="form-group">
-              <span class="labelform">Телефон</span>
-              <input type="tel" name="tel" placeholder="" class="form-input"
-            /></label>
+              <input
+                type="tel"
+                name="tel"
+                placeholder=""
+                class="form-input"
+                pattern="[0-9]{10}" /><svg
+                class="icon-mdl"
+                width="13"
+                height="13"
+              >
+                <use href="./images/mdlsprite.svg#icon-mdltel"></use></svg
+            ></label>
+            <span class="labelform">Почта</span>
             <label class="form-group">
-              <span class="labelform">Почта</span>
-              <input type="email" name="mail" placeholder="" class="form-input"
-            /></label>
+              <input
+                type="email"
+                name="mail"
+                placeholder=""
+                class="form-input" />
+              <svg class="icon-mdl" width="15" height="12">
+                <use href="./images/mdlsprite.svg#icon-mdlmail"></use></svg
+            ></label>
             <label class="comment" for="txtarea">
               <span class="labelcomment">Комментарий</span></label
             >
@@ -499,10 +525,17 @@
               class="textarea-com"
               placeholder="Введите текст"
             ></textarea>
+            <div class="conditions">
+              <label class="label-checkbox">
+                <input type="checkbox" name="mdlbox" class="modalcheckbox" />
 
-            <label class="label-checkbox">
-              <input type="checkbox" name="mdlbox" class="modalcheckbox" />
-            </label>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="mdl-a" href="#"> Условия договора</a>
+              </label>
+            </div>
+            <div class="btn-align">
+              <button class="btn-main sendbutton">Отправить</button>
+            </div>
           </form>
         </div>
       </div>
