@@ -476,7 +476,9 @@
           <form class="modal-form" autocomplete="off">
             <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
             <button class="clsbtn" type="button" data-modal-close>
-              <svg class="close"><use href="./images/mdlsprite.svg#icon-closebtn"></use></svg>
+              <svg class="close">
+                <use href="./images/mdlsprite.svg#icon-closebtn"></use>
+              </svg>
               <!--<img src="./images/closebtn.svg" class="close" />-->
             </button>
             <span class="labelform">Имя</span>
@@ -516,19 +518,18 @@
               <svg class="icon-mdl" width="15" height="12">
                 <use href="./images/mdlsprite.svg#icon-mdlmail"></use></svg
             ></label>
+            <span class="labelform">Комментарий</span>
             <label class="comment" for="txtarea">
-              <span class="labelcomment">Комментарий</span></label
-            >
-            <textarea
-              type="text"
-              id="txtarea"
-              class="textarea-com"
-              placeholder="Введите текст"
-            ></textarea>
+              <textarea
+                type="text"
+                id="txtarea"
+                class="textarea-com"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
             <div class="conditions">
               <label class="label-checkbox">
                 <input type="checkbox" name="mdlbox" class="modalcheckbox" />
-
                 Соглашаюсь с рассылкой и принимаю
                 <a class="mdl-a" href="#"> Условия договора</a>
               </label>
