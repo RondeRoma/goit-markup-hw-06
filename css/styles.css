@@ -829,9 +829,44 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
-.label-chekbox {
-  display: inline-flex;
+.label-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mdl-a {
   color: var(--accent-color);
+}
+.modalcheckbox {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.mdl-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+  margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modalcheckbox:checked + .mdl-icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/iconcheck.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.mdlconditions {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
