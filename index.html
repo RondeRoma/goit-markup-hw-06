@@ -470,17 +470,19 @@
           </ul>
         </div>
       </section>
-
+      <!--
+  Модалка
+-->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <form class="modal-form" autocomplete="off">
             <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
-            <button class="clsbtn" type="button" data-modal-close>
+            <!-- <button class="clsbtn" type="button" data-modal-close>
               <svg class="close">
                 <use href="./images/mdlsprite.svg#icon-closebtn"></use>
               </svg>
-              <!--<img src="./images/closebtn.svg" class="close" />-->
-            </button>
+              
+            </button> -->
             <span class="labelform">Имя</span>
             <label class="form-group">
               <input
@@ -541,6 +543,11 @@
               <button class="btn-main sendbutton">Отправить</button>
             </div>
           </form>
+          <button class="clsbtn" type="button" data-modal-close>
+            <svg class="close">
+              <use href="./images/mdlsprite.svg#icon-closebtn"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </main>
