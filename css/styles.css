@@ -595,6 +595,7 @@ footer {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+  padding: 0;
   content: "";
   background-image: url(../images/iconsend.svg);
   background-size: contain;
